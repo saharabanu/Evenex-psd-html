@@ -6,10 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
+    outline: 0;
     border: none;
     text-decoration: none;
     transition: all .3s linear;
+    /* overflow-x: hidden; */
 }
 
 
@@ -41,8 +42,13 @@ ul {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    /* height:100px; */
     
 
+}
+.logo img{
+    width:100%;
+    /* height: 100px; */
 }
 
 
@@ -67,8 +73,7 @@ ul {
 }
 .fourth-menu{
     background-color: #ff3333;
-    width:100px;
-   
+    /* width:100px; */
     padding: 11px 20px;
     box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
     border-radius: 5px;
@@ -90,22 +95,17 @@ ul {
 }
 
 
-
-
-
-
-
 /* bannner style start  */
 
 
 .banner{
-    background-image: url('../Assets/header/banner.jpg');
+    background: url('../Assets/header/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:center;
+    /* margin-top: -117px; */
     padding:208px 0 307px;
     width:100%;
-    overflow-x:hidden;
 
    
 }
@@ -143,9 +143,6 @@ ul {
     font-size: 5px;
     padding-right: 8px;
     padding-top: 10px;
-   
-    
-  
 }
 .banner-purchase{
     color: #ffffff;
@@ -153,13 +150,13 @@ ul {
     font-weight: 500;
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    padding: 27px 32px;
+    padding: 20px 25px;
     box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
     cursor: pointer;
     border-radius: 5px;
 }
 .purchase-icon{
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .banner-calender{
@@ -182,6 +179,7 @@ ul {
 }
 
 /* bannner style end  */
+
 /* counter styke start  */
 .counter{
 background-image: url('../Assets/fun facts/counter.jpg');
@@ -189,15 +187,15 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 width:100%;
-margin-top: -84px;
+/* margin-top: -226px; */
 position: relative;
-overflow-x: hidden;;
+/* overflow-x: hidden;; */
 
 }
 
 
 .count-text{
-    padding: 133px 0 332px
+    padding: 150px 0 332px
 }
 .counter-content{
     display:grid;
@@ -226,12 +224,14 @@ overflow-x: hidden;;
 
 }
 .count-up{
-    background-image: url('../Assets/fun facts/count.jpg');
+    background-image: url('../Assets/fun facts/count-1.png');
     background-repeat: no-repeat;
-    width:1025px;
+    max-width:830px;
+    background-size: contain;
     position: absolute;
-    top:350px;
-    right:0px;
+    top:420px;
+    right:0;
+    overflow-x: hidden;
     
     
 
@@ -239,11 +239,12 @@ overflow-x: hidden;;
 .count{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-gap:4px;
-    padding: 36px 50px ;
+    grid-gap:10px;
+    padding: 20px 40px 40px;
 }
+
 .count h2{
- font-size: 48px;
+ /* font-size: 48px; */
  color:#ff3333;
  font-weight: 700;
  font-family: 'Poppins', sans-serif;
@@ -254,11 +255,56 @@ overflow-x: hidden;;
     font-weight: 500;
     color:#000000;
     font-family: 'Poppins', sans-serif;
+    /* margin-bottom: 40px ;  */
 }
 .last-count{
     padding-right: 250px;
 }
-/* counter styke end  */
+/* counter style end  */
+
+/* gallery style start  */ 
+.gallery{
+    padding:140px 0;
+    background-color: cyan;
+}
+/* .image img{
+    width:100%;
+    height: 200px;
+} */
+
+.gallery-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+.gallery-content{
+    /* background-color: bisque;
+    border: 1px solid red; */
+    height: 200px;
+}
+.gallery-content p{
+    color:#ff3333;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 30px;
+    
+}
+.gallery-content h2{
+    color:#000000;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 35px;
+}
+.last{
+ padding:50px 20px;
+}
+.last h2{
+ font-size: 24px;
+}
+/* gallery style end  */
+
 
 
 
@@ -270,25 +316,25 @@ overflow-x: hidden;;
     background-position: center;
     background-size: cover;
     width:100%;
+    /* margin-top: -230px; */
     
-    margin: 50px 0 0px;
-    overflow-x: hidden;
+   
     
 } 
 .fun-main{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+     justify-content: space-between;
+    align-items: center; 
     /* position: relative; */
    
 
 }
-.fun-count{
-    /* position: absolute;
-    top:30px;
-    right:20px; */
-    padding:60px 0;
-}
+/* .fun-count{
+ 
+    padding:50px 20px;
+} */
 .fun-header{
     font-size: 24px;
     font-weight: 700;
@@ -307,7 +353,7 @@ overflow-x: hidden;;
    
 }
 .countdown h2{
-    font-size: 64px;
+    /* font-size: 64px; */
     font-weight: 700;
     color:#000000;
     font-family: 'Poppins', sans-serif;
@@ -318,13 +364,13 @@ overflow-x: hidden;;
    
     color:#ff3333;
     font-size: 30px;
-
     padding:0 20px;
    
 }
 .offer{
     display: flex;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    justify-content:center ;
     align-items: center;
 }
 .offer-time{
@@ -344,24 +390,27 @@ overflow-x: hidden;;
     box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
     font-weight:500;
     font-family: 'Rubik', sans-serif;
-    padding:25px 36px;
+    padding:10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
-/* .fun-img img{
+.fun-img img{
+   width:100%;
+   z-index: 99999;
+   /* height: 390px; */
    
-    height:410px;
-    width:100%;
-} */
-.fun-img img {
-    position: absolute;
-    width: 262px;
-
-    bottom: -215%;
-   
-    z-index: 99999;
-    height: 390px;
+   /* overflow-x: hidden; */
 }
+
+    /* position: absolute; */
+    /* width: 262px; */
+
+    /* bottom: -10px; */
+   
+    /* z-index: 99999;
+    height: 390px; */
+    /* overflow-x: hidden; */
+
 
 
 /* fun part end  */
@@ -371,6 +420,8 @@ overflow-x: hidden;;
     background-color: #000000;
     padding: 20px;
     color:white;
+    /* margin-top: -100px; */
+    /* overflow-x: hidden; */
 }
 .footer-bottom p{
     text-align: center;
@@ -383,18 +434,7 @@ overflow-x: hidden;;
 }
 
 
-/* ?  I have faced some challeges with git and github
-i am still fetching this challneges. I canot solve it.
-i am still fecthing problem . I feel boring with this problem
 
-
-badly it can not solved now
-
-
-https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
-
-
-*/
 
 
 
@@ -406,9 +446,7 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
 
 
 /* media query   */
-@media (max-width:768px){
-
-     
+@media (max-width:768px){  
 
     /* header  */
     .header .navbar{
@@ -416,7 +454,7 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
         top:99%;
         left:0;
         right:0;
-        background-color: rgba(224, 8, 8, 0.849);
+        background-color: black;
         color:#fff;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         
@@ -425,6 +463,8 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
     }
     .header .navbar a{
         display:block;
+        color:#fff;
+        padding: 5px 10px;
         
     }
     
@@ -463,8 +503,87 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
 
 
     /* banner  */
+
+    .banner{
+        background: url('../Assets/header/banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        padding:20px 10px;
+        width:100%;
+        overflow-x: hidden;
     
+       
+    }
     .banner-inner{
+        color:#fff;
+       
+    }
+    .banner-p{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 10px;
+    }
+    .banner-heading{
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+   .banner-date{
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 15px;
+        
+    }
+    .banner-address{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 20px;
+       
+    }
+    .banner-icon{
+        font-size: 5px;
+        padding-right: 8px;
+        padding-top: 10px;
+    }
+    .banner-purchase{
+        color: #ffffff;
+        background-color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        padding: 10px 15px;
+        box-shadow: rgba(0, 0, 0, .40) 0px 25px 50px -12px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .purchase-icon{
+        padding-right: 8px;
+    }
+    
+    /* .banner-calender{
+        padding-left:27px ;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none; 
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    } */
+    /* .calender-icon{
+        background-color: #ffffff;
+        color: #ff3333;
+        padding:2px 5px ;
+        margin-right: 12px;
+        border-radius: 50%;
+    } */
+    
+    /* .banner-inner{
         padding: 0 20px;
         color:#fff;
     }
@@ -472,35 +591,65 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
     .banner-heading{
         font-size: 40px;
         
-    }
+    } 
     /* baner end  */
     
     /* counter  */
-        .counter{
-            padding: 0 20px;
+
+    .counter{
+        background-image: url('../Assets/fun facts/counter.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        /* margin-top: -226px; */
+        padding:20px 20px;
+        position: relative;
+        overflow-x: hidden;
+        
         }
         
         
-       
+        /* .count-text{
+            padding: 150px 0 332px
+        } */
         .counter-content{
             display:grid;
             grid-template-columns: 1fr ;
             grid-gap:10px;
         }
-        
+        .counter-overview{
+            color:#ff3333;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            padding-bottom: 18px;
+        }
         .counter-heading{
-            font-size: 36px;
-            
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
         
         }
-       
+        .counter-desc{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Rubik', sans-serif;
+            line-height: 22px;
+            padding-top: 10px;
+            /* padding-bottom: 31px; */
+        
+        }
         .count-up{
-            background-image: url('../Assets/fun facts/count.jpg');
+            background-image: url('../Assets/fun facts/count-1.png');
             background-repeat: no-repeat;
-            width:100%;
+            max-width:800px;
+            background-size: contain;
             position: absolute;
             top:600px;
-            right:0px;
+            right:0;
+            /* padding: 100px 0; */
+            /* overflow-x: hidden; */
             
             
         
@@ -508,24 +657,171 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
         .count{
             display: grid;
             grid-template-columns: 1fr 1fr ;
-            grid-gap:8px;
-            padding: 36px 50px ;
-        }
-        .count h2{
-         font-size: 30px;
-         
+            grid-gap:4px;
+            padding: 20px 40px ;
         }
         
+        .count h2{
+         /* font-size: 48px; */
+         color:#ff3333;
+         font-weight: 700;
+         font-family: 'Poppins', sans-serif;
+         /* padding-bottom: 1px; */
+        }
+        .count p{
+            font-size: 18px;
+            font-weight: 500;
+            color:#000000;
+            font-family: 'Poppins', sans-serif;
+            /* margin-bottom: 40px ;  */
+        }
         
     /* counter end  */
+
+    /* gallery style start  */ 
+.gallery{
+    padding:40px 100px;
+    overflow-x: hidden;
+}
+/* .image img{
+    min-width:100%;
+    height: 220px;
+    
+} */
+
+
+.gallery-main{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-gap:10px;
+}
+/* .gallery-content{
+   
+    max-height: 200vh;
+} */
+/* .gallery-content p{
+    color:#ff3333;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 30px;
+    
+}
+.gallery-content h2{
+    color:#000000;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 35px;
+}
+.last{
+ padding:50px 20px;
+}
+.last h2{
+ font-size: 24px;
+} */
+/* gallery style end  */
     
     /* fun part   */
-
-    
+    .fun{
+        background-image: url('../Assets/counters/fun.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width:100%;
+        /* margin-top: -230px; */
+        overflow-x: hidden;
+        
+       
+        
+    } 
     .fun-main{
         display:flex;
         flex-direction: column;
-      
+        gap: 5px;
+         justify-content: left;
+        align-items: left; 
+        /* position: relative; */
+       
+    
+    }
+    /* .fun-count{
+     
+        padding:200px 20px;
+    } */
+    .fun-header{
+        font-size: 24px;
+        font-weight: 700;
+        color:#000000;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    
+    .countdown{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        /* grid-gap:20px; */
+        /* position: relative; */
+        /* padding-bottom: 36px; */
+       
+    }
+    .countdown h2{
+        /* font-size: 64px; */
+        font-weight: 700;
+        color:#000000;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+    
+    }
+     .timer-span{
+       
+        color:#ff3333;
+        font-size: 30px;
+        padding:0 20px;
+       
+    }
+    .offer{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content:left ;
+        align-items: center;
+    }
+    .offer-time{
+        color:#ff3333;
+        font-size:16px;
+        font-weight:500;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+        text-align: left;
+    
+    
+    }
+    .ticket-btn{
+        color:#ffffff;
+        font-size: 16px;
+        background: -webkit-linear-gradient(left, red, orange);
+        box-shadow: rgba(240, 6, 6, 0.699) 0px 25px 50px -12px;
+        font-weight:500;
+        font-family: 'Rubik', sans-serif;
+        padding:15px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .fun-img img{
+       width:100%;
+       
+       /* overflow-x: hidden; */
+    }
+
+
+
+
+    
+    /* .fun-main{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
         
        
     
@@ -539,7 +835,8 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-gap:8px;
-        /* position: relative; */
+        width:40px;
+       
         padding-bottom: 36px;
     }
     .countdown h2{
@@ -547,6 +844,31 @@ https://stackoverflow.com/questions/33360043/git-error-need-to-remove-large-file
         
     
     }
+    .offer{
+        display: flex;
+        width: 100px;
+       
+    } */
+
+
+    .footer-bottom{
+        background-color: #000000;
+        padding: 20px ;
+        color:white;
+        width:100%;
+        overflow-x: hidden;
+       
+    }
+    .footer-bottom p{
+        text-align: left;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    .name{
+        color:#ff3333;
+    }
+   
     
     
     
