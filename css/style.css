@@ -322,19 +322,18 @@ position: relative;
     
 } 
 .fun-main{
-    display:flex;
-    flex-direction: row;
-    gap: 80px;
-     justify-content: space-between;
-    align-items: center; 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+     
     /* position: relative; */
    
 
 }
-/* .fun-count{
+.fun-count{
  
-    padding:50px 20px;
-} */
+    padding:200px 20px;
+}
 .fun-header{
     font-size: 24px;
     font-weight: 700;
@@ -418,7 +417,7 @@ position: relative;
 /* footer  */
 .footer-bottom{
     background-color: #000000;
-    padding: 20px;
+    padding: 20px 10px;
     color:white;
     /* margin-top: -100px; */
     /* overflow-x: hidden; */
@@ -658,7 +657,7 @@ position: relative;
             display: grid;
             grid-template-columns: 1fr 1fr ;
             grid-gap:4px;
-            padding: 20px 40px ;
+            padding: 5px 10px ;
         }
         
         .count h2{
@@ -680,7 +679,7 @@ position: relative;
 
     /* gallery style start  */ 
 .gallery{
-    padding:40px 100px;
+    padding:40px 10px;
     overflow-x: hidden;
 }
 /* .image img{
@@ -736,19 +735,17 @@ position: relative;
         
     } 
     .fun-main{
-        display:flex;
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: 1fr;
         gap: 5px;
-         justify-content: left;
-        align-items: left; 
-        /* position: relative; */
+         
        
     
     }
-    /* .fun-count{
+    .fun-count{
      
-        padding:200px 20px;
-    } */
+        padding:40px 20px;
+    }
     .fun-header{
         font-size: 24px;
         font-weight: 700;
@@ -760,8 +757,8 @@ position: relative;
     
     .countdown{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
-        /* grid-gap:20px; */
+        grid-template-columns: 1fr  ;
+        grid-gap:10px;
         /* position: relative; */
         /* padding-bottom: 36px; */
        
@@ -853,7 +850,7 @@ position: relative;
 
     .footer-bottom{
         background-color: #000000;
-        padding: 20px ;
+        padding: 20px 10px;
         color:white;
         width:100%;
         overflow-x: hidden;
